@@ -1,18 +1,55 @@
 /* .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); } */
 
-body {
+html {
+    scrollbar-gutter: stable;
     width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
     background-image: url(../images/bg-curvy-desktop.svg),
      linear-gradient(
         to bottom,
         hsl(217, 28%, 15%) 0%,
-        hsl(217, 28%, 15%) 50%,
-        hsl(218, 28%, 13%) 50%,
-        hsl(218, 28%, 13%) 100%
+        hsl(217, 28%, 15%) 35%,
+        hsl(218, 28%, 13%) 35%,
+        hsl(218, 28%, 13%) 85%,
+        hsl(216, 53%, 9%) 85%,
+        hsl(216, 53%, 9%) 100%
     );
     background-position-y: 22%;
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+nav a {
+    margin-left: 50px;
+}
+
+.nav-buttons {
+    align-self: center;
+    margin-right: 60px;
+}
+
+.nav-buttons button {
+    border-style: none;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+}
+
+.nav-buttons button:hover {
+    text-decoration: underline;
 }
