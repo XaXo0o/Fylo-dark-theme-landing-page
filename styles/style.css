@@ -25,7 +25,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
 }
 
 nav {
@@ -107,7 +107,77 @@ main button:hover {
 
 .features {
     display: grid;
-    gap: 40px;
+    gap: 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    width: 70%;
+    margin: 100px 0 50px 0;
+}
+
+.features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+}
+
+h4 {
+    margin: 40px 0 0 0;
+}
+
+.features p {
+    width: 450px;
+}
+
+.productivity {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.productivity > img {
+    width: 50%;
+}
+
+.productivity div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin-left: 50px; */
+    font-family: "Open Sans", sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+.productivity h2 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    width: 60%;
+    line-height: 50px;
+}
+
+.productivity p {
+    width: 80%;
+    font-size: 1.15rem;
+}
+
+.productivity a {
+    margin-top: 20px;
+    color: hsl(176, 68%, 64%);
+    font-size: 1.1rem;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
+}
+
+
+.productivity a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover .fill {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(35deg) brightness(102%) contrast(101%);
 }
