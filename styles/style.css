@@ -182,11 +182,33 @@ h4 {
 
 .testimonials > div {
     background-color: hsl(219, 30%, 18%);
-    width: 500px;
+    width: 480px;
     border-radius: 8px;
-
+    padding: 40px;
 }
 
+.card > p {
+    color: hsl(0, 0%, 100%);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    height: 70%;
+}
+
+.user {
+    display: grid;
+    /* height: 20%; */
+    width: 250px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+}
+
+.user img {
+    width: 40px;
+    border-radius: 50%;
+    grid-row: span 2;
+}
 
 .productivity a:hover {
     color: hsl(0, 0%, 100%);
