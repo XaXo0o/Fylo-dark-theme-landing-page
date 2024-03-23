@@ -148,7 +148,6 @@ h4 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    /* margin-left: 50px; */
     font-family: "Open Sans", sans-serif;
     color: hsl(0, 0%, 100%);
 }
@@ -172,6 +171,14 @@ h4 {
     text-decoration: none;
     border-bottom: 1px solid;
     padding-bottom: 3px;
+}
+
+.productivity a:hover {
+    color: hsl(0, 0%, 100%);
+}
+
+a:hover .fill {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(35deg) brightness(102%) contrast(101%);
 }
 
 .testimonials {
@@ -213,15 +220,48 @@ h4 {
 }
 
 .user h6,.user p {
-    margin: 5px;
-}
-
-
-
-.productivity a:hover {
+    margin: 0 5px 0 5px;
+    font-family: "Open Sans", sans-serif;
     color: hsl(0, 0%, 100%);
 }
 
-a:hover .fill {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(35deg) brightness(102%) contrast(101%);
+.early-access {
+    background-color: hsl(217, 28%, 15%);
+    padding: 46px 0 46px 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.early-access h2 {
+    font-family: "Raleway", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    font-weight: 650;
+    margin-top: 0;
+}
+
+.early-access p {
+    font-family: "Raleway", sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 1.1rem;
+    width: 80%;
+    margin-top: 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+form input {
+    width: 500px;
+    height: 40px;
+    border-radius: 35px;
+    border-style: none;
 }
