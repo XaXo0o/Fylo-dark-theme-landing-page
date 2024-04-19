@@ -227,6 +227,7 @@ a:hover .fill {
 
 .early-access {
     background-color: hsl(217, 28%, 15%);
+    margin: 200px 0 200px 0;
     padding: 46px 0 46px 0;
     border-radius: 15px;
     display: flex;
@@ -264,4 +265,15 @@ form input {
     height: 40px;
     border-radius: 35px;
     border-style: none;
+    text-indent: 10px;
+}
+
+form button {
+    border-radius: 20px;
+    border-style: none;
+    background-color: hsl(198, 60%, 50%);
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    width: 200px;
 }
